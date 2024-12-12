@@ -1,0 +1,14 @@
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\bin\Debug\KoMatKutuphaneApp.exe.config
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\bin\Debug\KoMatKutuphaneApp.exe
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\bin\Debug\KoMatKutuphaneApp.pdb
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.AssemblyReference.cache
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.AnaForm.resources
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.Properties.Resources.resources
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.GenerateResource.cache
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.CoreCompileInputs.cache
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.exe
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.pdb
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.DilIslemleri.resources
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\bin\Debug\VeriErisimKatmani.dll
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\bin\Debug\VeriErisimKatmani.pdb
+C:\Users\Alp\source\repos\KoMatKutuphaneApp\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.CopyComplete
