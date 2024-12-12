@@ -38,8 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_duzenle = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_sil = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -127,22 +127,24 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.düzenleToolStripMenuItem,
-            this.silToolStripMenuItem});
+            this.TSMI_duzenle,
+            this.TSMI_sil});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
-            // düzenleToolStripMenuItem
+            // TSMI_duzenle
             // 
-            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.düzenleToolStripMenuItem.Text = "Düzenle";
+            this.TSMI_duzenle.Name = "TSMI_duzenle";
+            this.TSMI_duzenle.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_duzenle.Text = "Düzenle";
+            this.TSMI_duzenle.Click += new System.EventHandler(this.TSMI_duzenle_Click);
             // 
-            // silToolStripMenuItem
+            // TSMI_sil
             // 
-            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.silToolStripMenuItem.Text = "Sil";
+            this.TSMI_sil.Name = "TSMI_sil";
+            this.TSMI_sil.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_sil.Text = "Sil";
+            this.TSMI_sil.Click += new System.EventHandler(this.TSMI_sil_Click);
             // 
             // DilIslemleri
             // 
@@ -173,7 +175,7 @@
         private System.Windows.Forms.Button btn_temizle;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_duzenle;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_sil;
     }
 }

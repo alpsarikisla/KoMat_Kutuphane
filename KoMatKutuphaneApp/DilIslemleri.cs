@@ -14,6 +14,7 @@ namespace KoMatKutuphaneApp
     public partial class DilIslemleri : Form
     {
         VeriModel db = new VeriModel();
+        int secilenID = -1;
         public DilIslemleri()
         {
             InitializeComponent();
@@ -50,7 +51,29 @@ namespace KoMatKutuphaneApp
             if (e.Button == MouseButtons.Right)
             {
                 contextMenuStrip1.Show(dataGridView1, e.X,e.Y);
+                int satir = dataGridView1.HitTest(e.X, e.Y).RowIndex;
+                //Tıklama işleminin kordinatlarının hangi satırın üzerine denk geldiğini bulmamızı sağlar
+                dataGridView1.ClearSelection();
+                if (satir != -1)
+                {
+                    dataGridView1.Rows[satir].Selected = true;
+                    //hangi satırın üzerinde sağ tıkladıysak o satırın seçili olmasını sağladık.
+                    secilenID = Convert.ToInt32(dataGridView1.Rows[satir].Cells[0].Value);
+                }
             }
+        }
+
+        private void TSMI_duzenle_Click(object sender, EventArgs e)
+        {
+            Dil d = db.DilGetir(secilenID);
+            tb_id.Text = d.ID.ToString();
+            tb_isim.Text = d.Isim;
+        }
+
+        private void TSMI_sil_Click(object sender, EventArgs e)
+        {
+            db.DilSil(secilenID);
+            dataGridView1.DataSource = db.DilListele();
         }
     }
 }
