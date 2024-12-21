@@ -26,3 +26,4 @@ C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatK
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.CopyComplete
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.exe
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.pdb
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YazarIslemleri.resources

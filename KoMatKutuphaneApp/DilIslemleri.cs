@@ -50,12 +50,12 @@ namespace KoMatKutuphaneApp
         {
             if (e.Button == MouseButtons.Right)
             {
-                contextMenuStrip1.Show(dataGridView1, e.X,e.Y);
                 int satir = dataGridView1.HitTest(e.X, e.Y).RowIndex;
                 //Tıklama işleminin kordinatlarının hangi satırın üzerine denk geldiğini bulmamızı sağlar
                 dataGridView1.ClearSelection();
                 if (satir != -1)
                 {
+                    contextMenuStrip1.Show(dataGridView1, e.X, e.Y);
                     dataGridView1.Rows[satir].Selected = true;
                     //hangi satırın üzerinde sağ tıkladıysak o satırın seçili olmasını sağladık.
                     secilenID = Convert.ToInt32(dataGridView1.Rows[satir].Cells[0].Value);
@@ -68,12 +68,37 @@ namespace KoMatKutuphaneApp
             Dil d = db.DilGetir(secilenID);
             tb_id.Text = d.ID.ToString();
             tb_isim.Text = d.Isim;
+            btn_duzenle.Visible = true;
         }
 
         private void TSMI_sil_Click(object sender, EventArgs e)
         {
             db.DilSil(secilenID);
             dataGridView1.DataSource = db.DilListele();
+        }
+
+        private void btn_duzenle_Click(object sender, EventArgs e)
+        {
+            Dil d = db.DilGetir(secilenID);
+            if (!string.IsNullOrEmpty(tb_isim.Text))
+            {
+                d.Isim = tb_isim.Text;
+                if (db.DilGuncelle(d))
+                {
+                    MessageBox.Show("Güncelleme Başarılı", "Başarılı");
+                    tb_id.Text = tb_isim.Text = "";
+                    btn_duzenle.Visible = false;
+                    dataGridView1.DataSource = db.DilListele();
+                }
+                else
+                {
+                    MessageBox.Show("Dil güncellenirken bir hata oluştu", "Başarısız");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Dil adı boş bırakılamaz", "Hata");
+            }    
         }
     }
 }

@@ -104,6 +104,7 @@
             this.TSMI_Yazarlar.Name = "TSMI_Yazarlar";
             this.TSMI_Yazarlar.Size = new System.Drawing.Size(180, 22);
             this.TSMI_Yazarlar.Text = "Yazarlar";
+            this.TSMI_Yazarlar.Click += new System.EventHandler(this.TSMI_Yazarlar_Click);
             // 
             // TSMI_YayinEvleri
             // 
