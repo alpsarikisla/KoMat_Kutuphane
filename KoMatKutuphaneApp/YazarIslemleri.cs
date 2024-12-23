@@ -75,7 +75,52 @@ namespace KoMatKutuphaneApp
 
         private void TSMI_sil_Click(object sender, EventArgs e)
         {
+            int id = Convert.ToInt32(dataGridView1.Rows[rowindex].Cells[0].Value);
+            int kitapsayi = db.YazarKitapSayi(id);
+            if (kitapsayi == 0)
+            {
+                Yazar model = db.YazarGetir(id);
+                DialogResult sonuc = MessageBox.Show($"{model.Isim} {model.Soyisim} yazarı silinecektir.\nOnaylıyor musunuz?", "Silme işlemini onaylayın", MessageBoxButtons.YesNo);
+                if (sonuc == DialogResult.Yes)
+                {
+                    db.YazarSil(id);
+                    dataGridView1.DataSource = db.YazarListele();
+                }
+                else
+                {
+                    MessageBox.Show("Silme işlemi iptal edildi", "İptal");
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Bu yazararın sistemde kayıtlı {kitapsayi} adet kitabı olduğu için bu yazar silinemez...","Yazar Silinemez");
+            }
+        }
 
+        private void btn_duzenle_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tb_isim.Text))
+            {
+                Yazar model = new Yazar();
+                model.ID = Convert.ToInt32(tb_id.Text);
+                model.Isim = tb_isim.Text;
+                model.Soyisim = tb_soyisim.Text;
+                if (db.YazarGuncelle(model))
+                {
+                    MessageBox.Show("Yazar güncellendi.", "Başarılı");
+                    dataGridView1.DataSource = db.YazarListele();
+                    tb_isim.Text = tb_soyisim.Text = tb_id.Text= "";
+                    btn_duzenle.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Yazar güncellenirken bir hata oluştu.", "Başarısız");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Yazar ismi boş bırakılamaz.", "Boş Veri");
+            }
         }
     }
 }

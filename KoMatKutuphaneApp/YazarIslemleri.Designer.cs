@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_duzenle = new System.Windows.Forms.Button();
             this.btn_yazarEkle = new System.Windows.Forms.Button();
             this.btn_temizle = new System.Windows.Forms.Button();
             this.tb_soyisim = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TSMI_duzenle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_sil = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_duzenle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -77,6 +77,17 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Yazar Bilgileri";
+            // 
+            // btn_duzenle
+            // 
+            this.btn_duzenle.Location = new System.Drawing.Point(501, 120);
+            this.btn_duzenle.Name = "btn_duzenle";
+            this.btn_duzenle.Size = new System.Drawing.Size(87, 23);
+            this.btn_duzenle.TabIndex = 3;
+            this.btn_duzenle.Text = "Yazar Düzenle";
+            this.btn_duzenle.UseVisualStyleBackColor = true;
+            this.btn_duzenle.Visible = false;
+            this.btn_duzenle.Click += new System.EventHandler(this.btn_duzenle_Click);
             // 
             // btn_yazarEkle
             // 
@@ -167,16 +178,6 @@
             this.TSMI_sil.Size = new System.Drawing.Size(116, 22);
             this.TSMI_sil.Text = "Sil";
             this.TSMI_sil.Click += new System.EventHandler(this.TSMI_sil_Click);
-            // 
-            // btn_duzenle
-            // 
-            this.btn_duzenle.Location = new System.Drawing.Point(501, 120);
-            this.btn_duzenle.Name = "btn_duzenle";
-            this.btn_duzenle.Size = new System.Drawing.Size(87, 23);
-            this.btn_duzenle.TabIndex = 3;
-            this.btn_duzenle.Text = "Yazar Düzenle";
-            this.btn_duzenle.UseVisualStyleBackColor = true;
-            this.btn_duzenle.Visible = false;
             // 
             // YazarIslemleri
             // 

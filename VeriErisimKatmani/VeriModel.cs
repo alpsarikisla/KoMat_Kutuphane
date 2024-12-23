@@ -223,7 +223,6 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
-
         public bool YazarGuncelle(Yazar model)
         {
             try
@@ -246,7 +245,6 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
-
         public void YazarSil(int id)
         {
             try
@@ -262,6 +260,29 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
+        public int YazarKitapSayi(int id)
+        {
+            try
+            {
+                komut.CommandText = "SELECT COUNT(*) FROM KitapYazarlar WHERE YazarID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                int sayi = Convert.ToInt32(komut.ExecuteScalar());
+                return sayi;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        #endregion
+
+        #region Tür Metotları
+
+
+
 
         #endregion
     }

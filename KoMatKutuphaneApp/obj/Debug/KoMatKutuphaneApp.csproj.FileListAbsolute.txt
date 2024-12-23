@@ -23,7 +23,7 @@ C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatK
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.Properties.Resources.resources
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.GenerateResource.cache
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.CoreCompileInputs.cache
-C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.csproj.CopyComplete
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.exe
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.pdb
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YazarIslemleri.resources
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKut.E73989BB.Up2Date
