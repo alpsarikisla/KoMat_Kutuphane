@@ -27,3 +27,5 @@ C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatK
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.pdb
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YazarIslemleri.resources
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKut.E73989BB.Up2Date
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.TurIslemleri.resources
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YayinEviIslemleri.resources

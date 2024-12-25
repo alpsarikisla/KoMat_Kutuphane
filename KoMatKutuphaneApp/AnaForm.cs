@@ -63,5 +63,45 @@ namespace KoMatKutuphaneApp
                 frm.Show();
             }
         }
+
+        private void TSMI_turler_Click(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(TurIslemleri))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                TurIslemleri frm = new TurIslemleri();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void TSMI_YayinEvleri_Click(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(YayinEviIslemleri))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                YayinEviIslemleri frm = new YayinEviIslemleri();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

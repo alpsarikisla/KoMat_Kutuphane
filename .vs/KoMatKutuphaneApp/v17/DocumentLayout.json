@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\komatkutuphaneapp\\yazarislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\yazarislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\komatkutuphaneapp\\kitapislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\kitapislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7419DFF3-40F5-45A5-B2AF-0F223F8F45DF}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\verierisimkatmani\\verimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7419DFF3-40F5-45A5-B2AF-0F223F8F45DF}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\verimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\komatkutuphaneapp\\yayineviislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\yayineviislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\dilislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\dilislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\komatkutuphaneapp\\turislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\turislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7419DFF3-40F5-45A5-B2AF-0F223F8F45DF}|VeriErisimKatmani\\VeriErisimKatmani.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\verierisimkatmani\\yazar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7419DFF3-40F5-45A5-B2AF-0F223F8F45DF}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\yazar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\komatkutuphaneapp\\yayineviislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\yayineviislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\yazarislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\yazarislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|c:\\users\\alp\\documents\\github\\komat_kutuphane\\komatkutuphaneapp\\turislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\turislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\anaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\anaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\anaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\anaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\anaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\anaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\dilislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|solutionrelative:komatkutuphaneapp\\dilislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7419DFF3-40F5-45A5-B2AF-0F223F8F45DF}|VeriErisimKatmani\\VeriErisimKatmani.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\verierisimkatmani\\verimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7419DFF3-40F5-45A5-B2AF-0F223F8F45DF}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\verimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79E25F17-0B55-40FC-B7FC-B703D10C4DC2}|KoMatKutuphaneApp\\KoMatKutuphaneApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\komatkutuphaneapp\\dilislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -55,83 +63,107 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "YazarIslemleri.cs",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YazarIslemleri.cs",
-              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\YazarIslemleri.cs",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YazarIslemleri.cs",
-              "RelativeToolTip": "KoMatKutuphaneApp\\YazarIslemleri.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAUwFEAAAAwAAAAAAAAAA==",
+              "Title": "KitapIslemleri.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\KitapIslemleri.cs",
+              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\KitapIslemleri.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\KitapIslemleri.cs [Design]",
+              "RelativeToolTip": "KoMatKutuphaneApp\\KitapIslemleri.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T09:35:52.295Z",
+              "WhenOpened": "2024-12-25T07:44:06.124Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YayinEviIslemleri.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YayinEviIslemleri.cs",
+              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\YayinEviIslemleri.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YayinEviIslemleri.cs",
+              "RelativeToolTip": "KoMatKutuphaneApp\\YayinEviIslemleri.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAA8wGEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:15:46.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "YayinEviIslemleri.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YayinEviIslemleri.cs",
+              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\YayinEviIslemleri.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YayinEviIslemleri.cs [Design]",
+              "RelativeToolTip": "KoMatKutuphaneApp\\YayinEviIslemleri.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:13:54.779Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TurIslemleri.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\TurIslemleri.cs",
+              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\TurIslemleri.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\TurIslemleri.cs",
+              "RelativeToolTip": "KoMatKutuphaneApp\\TurIslemleri.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAmwHUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:00:03.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "YazarIslemleri.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YazarIslemleri.cs",
-              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\YazarIslemleri.cs",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\YazarIslemleri.cs [Design]",
-              "RelativeToolTip": "KoMatKutuphaneApp\\YazarIslemleri.cs [Design]",
+              "Title": "TurIslemleri.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\TurIslemleri.cs",
+              "RelativeDocumentMoniker": "KoMatKutuphaneApp\\TurIslemleri.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\TurIslemleri.cs [Design]",
+              "RelativeToolTip": "KoMatKutuphaneApp\\TurIslemleri.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:42:22.843Z",
+              "WhenOpened": "2024-12-25T06:58:40.878Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Yazar.cs",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\VeriErisimKatmani\\Yazar.cs",
-              "RelativeDocumentMoniker": "VeriErisimKatmani\\Yazar.cs",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\VeriErisimKatmani\\Yazar.cs",
-              "RelativeToolTip": "VeriErisimKatmani\\Yazar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:27:40.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "DilIslemleri.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\DilIslemleri.cs",
               "RelativeDocumentMoniker": "KoMatKutuphaneApp\\DilIslemleri.cs",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\DilIslemleri.cs",
               "RelativeToolTip": "KoMatKutuphaneApp\\DilIslemleri.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAiwDAAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAmwGQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T06:26:32.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "VeriModel.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\VeriErisimKatmani\\VeriModel.cs",
               "RelativeDocumentMoniker": "VeriErisimKatmani\\VeriModel.cs",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\VeriErisimKatmani\\VeriModel.cs",
               "RelativeToolTip": "VeriErisimKatmani\\VeriModel.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAA7wAwBAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T06:26:32.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AnaForm.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\AnaForm.cs",
               "RelativeDocumentMoniker": "KoMatKutuphaneApp\\AnaForm.cs",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\AnaForm.cs",
               "RelativeToolTip": "KoMatKutuphaneApp\\AnaForm.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwDAAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAIwF8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T06:26:32.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DilIslemleri.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\DilIslemleri.cs",
               "RelativeDocumentMoniker": "KoMatKutuphaneApp\\DilIslemleri.cs",
@@ -143,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\Program.cs",
               "RelativeDocumentMoniker": "KoMatKutuphaneApp\\Program.cs",
@@ -155,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AnaForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\KoMat_Kutuphane\\KoMatKutuphaneApp\\AnaForm.cs",
               "RelativeDocumentMoniker": "KoMatKutuphaneApp\\AnaForm.cs",

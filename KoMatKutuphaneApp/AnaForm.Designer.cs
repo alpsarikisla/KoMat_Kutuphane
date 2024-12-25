@@ -98,6 +98,7 @@
             this.TSMI_turler.Name = "TSMI_turler";
             this.TSMI_turler.Size = new System.Drawing.Size(180, 22);
             this.TSMI_turler.Text = "Türler";
+            this.TSMI_turler.Click += new System.EventHandler(this.TSMI_turler_Click);
             // 
             // TSMI_Yazarlar
             // 
@@ -111,6 +112,7 @@
             this.TSMI_YayinEvleri.Name = "TSMI_YayinEvleri";
             this.TSMI_YayinEvleri.Size = new System.Drawing.Size(180, 22);
             this.TSMI_YayinEvleri.Text = "Yayın Evleri";
+            this.TSMI_YayinEvleri.Click += new System.EventHandler(this.TSMI_YayinEvleri_Click);
             // 
             // toolStripSeparator1
             // 
