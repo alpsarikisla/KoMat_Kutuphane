@@ -103,5 +103,25 @@ namespace KoMatKutuphaneApp
                 frm.Show();
             }
         }
+
+        private void TSMI_Kitaplar_Click(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(KitapIslemleri))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                KitapIslemleri frm = new KitapIslemleri();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

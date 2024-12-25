@@ -126,6 +126,7 @@
             this.TSMI_Kitaplar.Name = "TSMI_Kitaplar";
             this.TSMI_Kitaplar.Size = new System.Drawing.Size(180, 22);
             this.TSMI_Kitaplar.Text = "Kitaplar";
+            this.TSMI_Kitaplar.Click += new System.EventHandler(this.TSMI_Kitaplar_Click);
             // 
             // toolStripSeparator2
             // 

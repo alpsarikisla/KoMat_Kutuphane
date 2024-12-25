@@ -93,6 +93,9 @@
     <EmbeddedResource Include="DilIslemleri.resx">
       <DependentUpon>DilIslemleri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KitapIslemleri.resx">
+      <DependentUpon>KitapIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
