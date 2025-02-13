@@ -123,5 +123,10 @@ namespace KoMatKutuphaneApp
                 frm.Show();
             }
         }
+
+        private void yazarEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

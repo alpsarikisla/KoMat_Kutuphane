@@ -559,5 +559,208 @@ namespace VeriErisimKatmani
         }
 
         #endregion
+
+        #region Kitap Metotları
+
+        public List<Kitap> KitapListele()
+        {
+            List<Kitap> kitaplar = new List<Kitap>();
+            try
+            {
+                komut.CommandText = "SELECT K.ID, K.TurID, T.Isim, K.YayinEviID, Y.Isim, K.DilID, D.Dil, K.SiraNo,K.Isim,K.Barkod FROM Kitaplar AS K JOIN Turler AS T ON K.TurID=T.ID JOIN YayinEvleri AS Y ON K.YayinEviID = Y.ID JOIN Diller AS D ON K.DilID=D.ID";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Kitap k = new Kitap();
+                    k.ID = okuyucu.GetInt32(0);
+                    k.Tur_ID = okuyucu.GetInt32(1);
+                    k.Tur = okuyucu.GetString(2);
+                    k.YayinEvi_ID = okuyucu.GetInt32(3);
+                    k.YayinEvi = okuyucu.GetString(4);
+                    k.Dil_ID = okuyucu.GetInt32(5);
+                    k.Dil = okuyucu.GetString(6);
+                    k.SiraNo = okuyucu.GetInt16(7);
+                    k.Isim = okuyucu.GetString(8);
+                    if (!okuyucu.IsDBNull(9))
+                    {
+                        k.Barkod = okuyucu.GetString(9);
+                    }
+                    kitaplar.Add(k);
+                }
+                return kitaplar;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public bool KitapEkle(Kitap k)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Kitaplar(TurID,YayineviID,DilID,SiraNo,Isim,Barkod) VALUES(@turID,@yayineviID,@dilID,@siraNo,@isim,@barkod)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@turID", k.Tur_ID);
+                komut.Parameters.AddWithValue("@yayineviID", k.YayinEvi_ID);
+                komut.Parameters.AddWithValue("@dilID", k.Dil_ID);
+                komut.Parameters.AddWithValue("@siraNo", k.SiraNo);
+                komut.Parameters.AddWithValue("@isim", k.Isim);
+                komut.Parameters.AddWithValue("@barkod", k.Barkod);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public string KitapYazarlari(int kitapID)
+        {
+            try
+            {
+                komut.CommandText = "SELECT Y.Isim + ' ' + Y.Soyisim FROM KitapYazarlar AS KY JOIN Yazarlar AS Y ON KY.YazarID=Y.ID WHERE KY.KitapID=@kid";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@kid", kitapID);
+                baglanti.Open();
+                string yazarlar = "";
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    yazarlar += okuyucu.GetString(0) + ", ";
+                }
+                return yazarlar;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public Kitap KitapGetir(int id)
+        {
+            Kitap k = new Kitap();
+            try
+            {
+                komut.CommandText = "SELECT K.ID, K.TurID, T.Isim, K.YayinEviID, Y.Isim, K.DilID, D.Dil, K.SiraNo,K.Isim,K.Barkod FROM Kitaplar AS K JOIN Turler AS T ON K.TurID=T.ID JOIN YayinEvleri AS Y ON K.YayinEviID = Y.ID JOIN Diller AS D ON K.DilID=D.ID WHERE K.ID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    k.ID = okuyucu.GetInt32(0);
+                    k.Tur_ID = okuyucu.GetInt32(1);
+                    k.Tur = okuyucu.GetString(2);
+                    k.YayinEvi_ID = okuyucu.GetInt32(3);
+                    k.YayinEvi = okuyucu.GetString(4);
+                    k.Dil_ID = okuyucu.GetInt32(5);
+                    k.Dil = okuyucu.GetString(6);
+                    k.SiraNo = okuyucu.GetInt16(7);
+                    k.Isim = okuyucu.GetString(8);
+                    if (!okuyucu.IsDBNull(9))
+                    {
+                        k.Barkod = okuyucu.GetString(9);
+                    }
+                   
+                }
+                return k;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public void kitapSil(int id)
+        {
+            try
+            {
+                komut.CommandText = "DELETE FROM KitapYazarlar WHERE KitapID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                komut.CommandText = "DELETE FROM Kitaplar WHERE ID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                komut.ExecuteNonQuery();
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public bool kitapGuncelle(Kitap k)
+        {
+            try
+            {
+                komut.CommandText = "UPDATE Kitaplar SET SiraNo = @sNo, TurID = @tID, YayineviID = @yeID, DilID = @dID, Isim = @i, Barkod = @b WHERE ID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", k.ID);
+                komut.Parameters.AddWithValue("@sNo", k.SiraNo);
+                komut.Parameters.AddWithValue("@tID", k.Tur_ID);
+                komut.Parameters.AddWithValue("@yeID", k.YayinEvi_ID);
+                komut.Parameters.AddWithValue("@dID", k.Dil_ID);
+                komut.Parameters.AddWithValue("@i", k.Isim);
+                komut.Parameters.AddWithValue("@b", k.Barkod);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        #endregion
+
+        #region Kitap Yazarlar Metotları
+
+        public List<Yazar> kitapIDdenYazarListele(int kitapID)
+        {
+            try
+            {
+                komut.CommandText = "SELECT Y.ID, Y.Isim, Y.Soyisim FROM KitapYazarlar AS KY JOIN Yazarlar AS Y ON KY.YazarID=Y.ID WHERE KY.KitapID=@kid";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@kid", kitapID);
+                baglanti.Open();
+                List<Yazar> yazarlar = new List<Yazar>();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    yazarlar.Add(new Yazar() { ID = okuyucu.GetInt32(0), Isim = okuyucu.GetString(1), Soyisim = okuyucu.GetString(2) });
+                }
+                return yazarlar;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        #endregion
     }
 }

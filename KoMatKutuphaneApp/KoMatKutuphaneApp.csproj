@@ -81,6 +81,12 @@
     <Compile Include="YayinEviIslemleri.Designer.cs">
       <DependentUpon>YayinEviIslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="YazarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarEkle.Designer.cs">
+      <DependentUpon>YazarEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="YazarIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YayinEviIslemleri.resx">
       <DependentUpon>YayinEviIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarEkle.resx">
+      <DependentUpon>YazarEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YazarIslemleri.resx">
       <DependentUpon>YazarIslemleri.cs</DependentUpon>

@@ -30,3 +30,4 @@ C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatK
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.TurIslemleri.resources
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YayinEviIslemleri.resources
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.KitapIslemleri.resources
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YazarEkle.resources
