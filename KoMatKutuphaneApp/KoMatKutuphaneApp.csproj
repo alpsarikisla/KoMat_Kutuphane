@@ -61,6 +61,18 @@
     <Compile Include="DilIslemleri.Designer.cs">
       <DependentUpon>DilIslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kiralamalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiralamalar.Designer.cs">
+      <DependentUpon>Kiralamalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KirayaVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KirayaVer.Designer.cs">
+      <DependentUpon>KirayaVer.cs</DependentUpon>
+    </Compile>
     <Compile Include="KitapIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TumKiralamalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TumKiralamalar.Designer.cs">
+      <DependentUpon>TumKiralamalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="TurIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,12 @@
     <EmbeddedResource Include="DilIslemleri.resx">
       <DependentUpon>DilIslemleri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kiralamalar.resx">
+      <DependentUpon>Kiralamalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KirayaVer.resx">
+      <DependentUpon>KirayaVer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KitapIslemleri.resx">
       <DependentUpon>KitapIslemleri.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +130,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TumKiralamalar.resx">
+      <DependentUpon>TumKiralamalar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TurIslemleri.resx">
       <DependentUpon>TurIslemleri.cs</DependentUpon>

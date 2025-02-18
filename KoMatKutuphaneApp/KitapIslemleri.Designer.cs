@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_duzenle = new System.Windows.Forms.Button();
             this.btn_ekle = new System.Windows.Forms.Button();
             this.btn_temizle = new System.Windows.Forms.Button();
             this.cb_dil = new System.Windows.Forms.ComboBox();
@@ -55,7 +56,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.TSMI_Kirala = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_duzenle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -100,6 +100,17 @@
             this.groupBox1.Text = "Kitap İşlemleri";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // btn_duzenle
+            // 
+            this.btn_duzenle.Location = new System.Drawing.Point(561, 113);
+            this.btn_duzenle.Name = "btn_duzenle";
+            this.btn_duzenle.Size = new System.Drawing.Size(114, 23);
+            this.btn_duzenle.TabIndex = 5;
+            this.btn_duzenle.Text = "Kitap Düzenle";
+            this.btn_duzenle.UseVisualStyleBackColor = true;
+            this.btn_duzenle.Visible = false;
+            this.btn_duzenle.Click += new System.EventHandler(this.btn_duzenle_Click);
+            // 
             // btn_ekle
             // 
             this.btn_ekle.Location = new System.Drawing.Point(561, 113);
@@ -118,6 +129,7 @@
             this.btn_temizle.TabIndex = 3;
             this.btn_temizle.Text = "Formu Temizle";
             this.btn_temizle.UseVisualStyleBackColor = true;
+            this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
             // 
             // cb_dil
             // 
@@ -294,17 +306,6 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(126, 6);
-            // 
-            // btn_duzenle
-            // 
-            this.btn_duzenle.Location = new System.Drawing.Point(561, 113);
-            this.btn_duzenle.Name = "btn_duzenle";
-            this.btn_duzenle.Size = new System.Drawing.Size(114, 23);
-            this.btn_duzenle.TabIndex = 5;
-            this.btn_duzenle.Text = "Kitap Düzenle";
-            this.btn_duzenle.UseVisualStyleBackColor = true;
-            this.btn_duzenle.Visible = false;
-            this.btn_duzenle.Click += new System.EventHandler(this.btn_duzenle_Click);
             // 
             // KitapIslemleri
             // 

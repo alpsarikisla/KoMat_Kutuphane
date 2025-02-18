@@ -128,5 +128,50 @@ namespace KoMatKutuphaneApp
         {
 
         }
+
+        private void TSMI_Kiradakiler_Click(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(Kiralamalar))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                Kiralamalar frm = new Kiralamalar();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void TSMI_TumKiralamalar_Click(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(TumKiralamalar))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                TumKiralamalar frm = new TumKiralamalar();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void TSMI_Kapat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

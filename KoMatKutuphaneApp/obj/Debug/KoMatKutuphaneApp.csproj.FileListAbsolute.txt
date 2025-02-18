@@ -31,3 +31,6 @@ C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatK
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YayinEviIslemleri.resources
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.KitapIslemleri.resources
 C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.YazarEkle.resources
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.Kiralamalar.resources
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.TumKiralamalar.resources
+C:\Users\Alp\Documents\GitHub\KoMat_Kutuphane\KoMatKutuphaneApp\obj\Debug\KoMatKutuphaneApp.KirayaVer.resources

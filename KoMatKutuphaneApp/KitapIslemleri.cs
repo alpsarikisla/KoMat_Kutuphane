@@ -22,6 +22,15 @@ namespace KoMatKutuphaneApp
 
         private void KitapIslemleri_Load(object sender, EventArgs e)
         {
+            cbdoldur();
+
+            //Daha düzenli ve kolonları isteğe göre biçimlendirilebilir bir datagridview oluşturmak için datatable kullanacağız.
+            //dataGridView1.DataSource = db.KitapListele();
+            GridDoldur();
+        }
+
+        private void cbdoldur()
+        {
             cb_dil.DataSource = db.DilListele();
             cb_dil.DisplayMember = "Isim";
             cb_dil.ValueMember = "ID";
@@ -33,11 +42,8 @@ namespace KoMatKutuphaneApp
             cb_yayinEvi.DataSource = db.YayinEviListele();
             cb_yayinEvi.DisplayMember = "Isim";
             cb_yayinEvi.ValueMember = "ID";
-
-            //Daha düzenli ve kolonları isteğe göre biçimlendirilebilir bir datagridview oluşturmak için datatable kullanacağız.
-            //dataGridView1.DataSource = db.KitapListele();
-            GridDoldur();
         }
+
         public void GridDoldur()
         {
             //Data Table DataGridView'a atılacak olan olan verileri düzenli bir tablo halinde oluşturulabilmesini sağlar
@@ -117,12 +123,12 @@ namespace KoMatKutuphaneApp
             YazarEkle frm = new YazarEkle(secilenID);
             frm.ShowDialog();
             GridDoldur();
-
         }
 
         private void TSMI_Kirala_Click(object sender, EventArgs e)
         {
-
+            KirayaVer frm = new KirayaVer(secilenID);
+            frm.ShowDialog();
         }
 
         private void dataGridView1_MouseDown(object sender, MouseEventArgs e)
@@ -165,6 +171,12 @@ namespace KoMatKutuphaneApp
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_temizle_Click(object sender, EventArgs e)
+        {
+            tb_barkod.Text = tb_isim.Text = tb_id.Text = tb_siraNo.Text = "";
+            cbdoldur();
         }
     }
 }

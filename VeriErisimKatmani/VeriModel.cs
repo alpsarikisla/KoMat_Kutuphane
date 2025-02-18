@@ -189,6 +189,35 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
+        public List<Yazar> YazarListeleWithSoyad()
+        {
+            try
+            {
+                List<Yazar> yazarlar = new List<Yazar>();
+                komut.CommandText = "SELECT ID, Isim + ' ' + Soyisim FROM Yazarlar";
+                komut.Parameters.Clear();
+                baglanti.Open();
+
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Yazar model = new Yazar();
+                    model.ID = okuyucu.GetInt32(0);
+                    model.Isim = okuyucu.GetString(1);
+                    
+                    yazarlar.Add(model);
+                }
+                return yazarlar;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
         public bool YazarEkle(Yazar model)
         {
             try
@@ -754,6 +783,141 @@ namespace VeriErisimKatmani
                     yazarlar.Add(new Yazar() { ID = okuyucu.GetInt32(0), Isim = okuyucu.GetString(1), Soyisim = okuyucu.GetString(2) });
                 }
                 return yazarlar;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public bool kitabaYazarEkle(int kitapID, int yazarID)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO KitapYazarlar (KitapID,YazarID) VALUES(@kid,@yid)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@kid", kitapID);
+                komut.Parameters.AddWithValue("@yid", yazarID);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        #endregion
+
+        #region Kiralamalar
+
+        public List<Kiralama> KiradakiKitaplar()
+        {
+            List<Kiralama> kiralamalar = new List<Kiralama>();
+            try
+            {
+                komut.CommandText = "SELECT K.ID, KK.Isim, K.KiralamaTarihi, K.Aciklama FROM Kiralamalar AS K JOIN Kitaplar AS KK ON K.KitapID = KK.ID WHERE K.TeslimTarihi IS NULL";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader reader = komut.ExecuteReader();
+                while (reader.Read())
+                {
+                    Kiralama k = new Kiralama();
+                    k.ID = reader.GetInt32(0);
+                    k.KitapAdi = reader.GetString(1);
+                    k.KiralamaTarihi = reader.GetDateTime(2);
+                    k.Kiralayan = reader.GetString(3);
+                    kiralamalar.Add(k);
+                }
+                return kiralamalar;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public List<Kiralama> TumKiralamalar()
+        {
+            List<Kiralama> kiralamalar = new List<Kiralama>();
+            try
+            {
+                komut.CommandText = "SELECT K.ID, KK.Isim, K.KiralamaTarihi, K.TeslimTarihi, K.Aciklama FROM Kiralamalar AS K JOIN Kitaplar AS KK ON K.KitapID = KK.ID";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader reader = komut.ExecuteReader();
+                while (reader.Read())
+                {
+                    Kiralama k = new Kiralama();
+                    k.ID = reader.GetInt32(0);
+                    k.KitapAdi = reader.GetString(1);
+                    k.KiralamaTarihi = reader.GetDateTime(2);
+                    if (!reader.IsDBNull(3))
+                    {
+                        k.TeslimTarihi = reader.GetDateTime(3);
+                    }
+
+                    k.Kiralayan = reader.GetString(4);
+                    kiralamalar.Add(k);
+                }
+                return kiralamalar;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public bool KirayaVer(Kiralama k)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Kiralamalar (KitapID,KiralamaTarihi,Aciklama) VALUES(@kitapID,@kiralamaTarihi,@aciklama)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@kitapID", k.KitapID);
+                komut.Parameters.AddWithValue("@kiralamaTarihi", k.KiralamaTarihi);
+                komut.Parameters.AddWithValue("@aciklama", k.Kiralayan);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public bool TeslimEt(int kiralamaID)
+        {
+            try
+            {
+                komut.CommandText = "UPDATE Kiralamalar SET TeslimTarihi=@TeslimTarihi WHERE ID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", kiralamaID);
+                komut.Parameters.AddWithValue("@TeslimTarihi", DateTime.Now);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
             }
             finally
             {
