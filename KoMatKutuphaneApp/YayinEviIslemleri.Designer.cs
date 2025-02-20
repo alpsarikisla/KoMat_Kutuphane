@@ -91,6 +91,7 @@
             this.btn_temizle.TabIndex = 2;
             this.btn_temizle.Text = "Formu Temizle";
             this.btn_temizle.UseVisualStyleBackColor = true;
+            this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
             // 
             // tb_isim
             // 
@@ -143,19 +144,19 @@
             this.TSMI_duzenle,
             this.TSMI_sil});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 48);
             // 
             // TSMI_duzenle
             // 
             this.TSMI_duzenle.Name = "TSMI_duzenle";
-            this.TSMI_duzenle.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_duzenle.Size = new System.Drawing.Size(116, 22);
             this.TSMI_duzenle.Text = "Düzenle";
             this.TSMI_duzenle.Click += new System.EventHandler(this.TSMI_duzenle_Click);
             // 
             // TSMI_sil
             // 
             this.TSMI_sil.Name = "TSMI_sil";
-            this.TSMI_sil.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_sil.Size = new System.Drawing.Size(116, 22);
             this.TSMI_sil.Text = "Sil";
             this.TSMI_sil.Click += new System.EventHandler(this.TSMI_sil_Click);
             // 

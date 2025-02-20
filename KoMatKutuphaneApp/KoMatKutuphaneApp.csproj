@@ -61,6 +61,18 @@
     <Compile Include="DilIslemleri.Designer.cs">
       <DependentUpon>DilIslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gecikmisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gecikmisler.Designer.cs">
+      <DependentUpon>Gecikmisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gelistiriciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gelistiriciler.Designer.cs">
+      <DependentUpon>Gelistiriciler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kiralamalar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DilIslemleri.resx">
       <DependentUpon>DilIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gecikmisler.resx">
+      <DependentUpon>Gecikmisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gelistiriciler.resx">
+      <DependentUpon>Gelistiriciler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kiralamalar.resx">
       <DependentUpon>Kiralamalar.cs</DependentUpon>

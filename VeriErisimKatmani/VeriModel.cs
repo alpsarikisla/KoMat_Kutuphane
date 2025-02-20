@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
@@ -156,6 +157,27 @@ namespace VeriErisimKatmani
         #endregion
 
         #region Yazar Metotları
+
+        public bool yazarKontrol(string isimSoyad)
+        {
+            try
+            {
+                komut.CommandText = "SELECT COUNT(*) FROM Yazarlar WHERE Isim + ' ' + Soyisim LIKE @isimSoyad";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@isimSoyad", isimSoyad);
+                baglanti.Open();
+                int sayi = Convert.ToInt32(komut.ExecuteScalar());
+                if (sayi == 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
 
         public List<Yazar> YazarListele()
         {
@@ -459,7 +481,26 @@ namespace VeriErisimKatmani
         #endregion
 
         #region Yayınevi Metotları
-
+        public bool yayineviKontrol(string yayineviAdi)
+        {
+            try
+            {
+                komut.CommandText = "SELECT COUNT(*) FROM YayinEvleri WHERE Isim LIKE @yayineviAdi";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@yayineviAdi", yayineviAdi);
+                baglanti.Open();
+                int sayi = Convert.ToInt32(komut.ExecuteScalar());
+                if (sayi == 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
         public List<YayinEvi> YayinEviListele()
         {
             try
@@ -924,6 +965,8 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
+
+      
 
         #endregion
     }

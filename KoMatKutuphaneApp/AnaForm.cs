@@ -173,5 +173,46 @@ namespace KoMatKutuphaneApp
         {
             Application.Exit();
         }
+
+        private void TSMI_Gelistiriciler_Click(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(Gelistiriciler))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                Gelistiriciler frm = new Gelistiriciler();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void AnaForm_Load(object sender, EventArgs e)
+        {
+            Form[] acikFormlar = this.MdiChildren;
+            bool acikMi = false;
+            for (int i = 0; i < acikFormlar.Length; i++)
+            {
+                if (acikFormlar[i].GetType() == typeof(Gecikmisler))
+                {
+                    acikMi = true;
+                    acikFormlar[i].Activate();
+                }
+            }
+            if (acikMi == false)
+            {
+                Gecikmisler frm = new Gecikmisler();
+                frm.WindowState = FormWindowState.Maximized;
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

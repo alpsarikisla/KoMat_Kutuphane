@@ -107,6 +107,7 @@
             this.btn_temizle.TabIndex = 2;
             this.btn_temizle.Text = "Formu Temizle";
             this.btn_temizle.UseVisualStyleBackColor = true;
+            this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
             // 
             // tb_soyisim
             // 

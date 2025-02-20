@@ -29,18 +29,25 @@ namespace KoMatKutuphaneApp
         {
             if (!string.IsNullOrEmpty(tb_isim.Text))
             {
-                YayinEvi model = new YayinEvi();
-                model.Isim = tb_isim.Text;
-                if (db.YayineviEkle(model))
+                if (db.yayineviKontrol(tb_isim.Text))
                 {
-                    MessageBox.Show("Yayınevi eklendi", "Ekleme Başarılı");
+                    YayinEvi model = new YayinEvi();
+                    model.Isim = tb_isim.Text;
+                    if (db.YayineviEkle(model))
+                    {
+                        MessageBox.Show("Yayınevi eklendi", "Ekleme Başarılı");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bir Hata Oluştu", "Ekleme Başarısız");
+                    }
+                    tb_isim.Text = "";
+                    dataGridView1.DataSource = db.YayinEviListele();
                 }
                 else
                 {
-                    MessageBox.Show("Bir Hata Oluştu", "Ekleme Başarısız");
+                    MessageBox.Show("Bu yayın evi zaten var", "Hata");
                 }
-                tb_isim.Text = "";
-                dataGridView1.DataSource = db.YayinEviListele();
             }
             else
             {
@@ -68,17 +75,24 @@ namespace KoMatKutuphaneApp
             YayinEvi d = db.YayinEviGetir(secilenID);
             if (!string.IsNullOrEmpty(tb_isim.Text))
             {
-                d.Isim = tb_isim.Text;
-                if (db.YayinEviGuncelle(d))
+                if (db.yayineviKontrol(tb_isim.Text))
                 {
-                    MessageBox.Show("Güncelleme Başarılı", "Başarılı");
-                    tb_id.Text = tb_isim.Text = "";
-                    btn_duzenle.Visible = false;
-                    dataGridView1.DataSource = db.YayinEviListele();
+                    d.Isim = tb_isim.Text;
+                    if (db.YayinEviGuncelle(d))
+                    {
+                        MessageBox.Show("Güncelleme Başarılı", "Başarılı");
+                        tb_id.Text = tb_isim.Text = "";
+                        btn_duzenle.Visible = false;
+                        dataGridView1.DataSource = db.YayinEviListele();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Yayınevi güncellenirken bir hata oluştu", "Başarısız");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Yayınevi güncellenirken bir hata oluştu", "Başarısız");
+                    MessageBox.Show("Bu yayın evi zaten var", "Hata");
                 }
             }
             else
@@ -116,6 +130,12 @@ namespace KoMatKutuphaneApp
             {
                 MessageBox.Show($"Bu türe ait sistemde kayıtlı {kitapsayi} adet kitabı olduğu için bu yayınevi silinemez...", "yayınevi Silinemez");
             }
+        }
+
+        private void btn_temizle_Click(object sender, EventArgs e)
+        {
+            tb_isim.Text = "";
+            btn_duzenle.Visible = false;
         }
     }
 }
